@@ -4,6 +4,17 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="gradleHome" value="C:/Tools/gradle-2.11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/sandbox" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$USER_HOME$/sandbox" />
         <option name="gradleHome" value="C:/Tools/gradle-2.11" />
         <option name="modules">
