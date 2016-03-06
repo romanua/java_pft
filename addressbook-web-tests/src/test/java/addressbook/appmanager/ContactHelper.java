@@ -53,4 +53,19 @@ public class ContactHelper extends HelperBase{
         new Select(selectLocator).selectByVisibleText(selectValue);
     }
 
+    public void checkFirstContactFromList() {
+        click(By.xpath(".//*[@id='1']"));
+    }
+
+    public void deleteContact() {
+        click(By.xpath(".//*[@value='Delete']"));
+    }
+
+    public void initEditingFirstContact() {
+        click(By.xpath(".//*[@href='edit.php?id=1']"));
+    }
+
+    public void submitContactEditing() {
+        click(By.name("update"));
+    }
 }
