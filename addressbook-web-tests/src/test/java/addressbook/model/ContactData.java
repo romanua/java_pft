@@ -1,6 +1,10 @@
 package addressbook.model;
 
 public class ContactData {
+    private final String bDay;
+    private final String bMonth;
+    private final String aDay;
+    private final String aMonth;
     private final String name;
     private final String middleName;
     private final String lastName;
@@ -21,7 +25,12 @@ public class ContactData {
     private final String phone;
     private final String notes;
 
-    public ContactData(String name, String middleName, String lastName, String nickname, String companyTitle, String companyName, String address, String homePhone, String mobilePhone, String workPhone, String fax, String firstEmail, String secondEmail, String website, String birthdayYear, String anniversaryYear, String secondAddress, String phone, String notes) {
+
+    public ContactData(String bDay, String bMonth, String aDay, String aMonth, String name, String middleName, String lastName, String nickname, String companyTitle, String companyName, String address, String homePhone, String mobilePhone, String workPhone, String fax, String firstEmail, String secondEmail, String website, String birthdayYear, String anniversaryYear, String secondAddress, String phone, String notes) {
+        this.aDay = aDay;
+        this.bDay = bDay;
+        this.aMonth = aMonth;
+        this.bMonth = bMonth;
         this.name = name;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -97,6 +106,22 @@ public class ContactData {
 
     public String getWebsite() {
         return website;
+    }
+
+    public String getAday() {
+        return aDay;
+    }
+
+    public String getAmonth() {
+        return aMonth;
+    }
+
+    public String getBday() {
+        return bDay;
+    }
+
+    public String getBmonth() {
+        return bMonth;
     }
 
     public String getBirthdayYear() {
