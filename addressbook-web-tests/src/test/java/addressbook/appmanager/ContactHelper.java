@@ -54,10 +54,10 @@ public class ContactHelper extends HelperBase{
     }
 
     public void checkFirstContactFromList() {
-        click(By.xpath(".//*[@id='1']"));
+        click(By.xpath(".//tr[@name='entry'][1]//input"));
     }
 
-    public void deleteContact() {
+    public void initContactDeletion() {
         click(By.xpath(".//*[@value='Delete']"));
     }
 
@@ -67,5 +67,9 @@ public class ContactHelper extends HelperBase{
 
     public void submitContactEditing() {
         click(By.name("update"));
+    }
+
+    public void confirmContactDeletion() {
+        wd.switchTo().alert().accept();
     }
 }
