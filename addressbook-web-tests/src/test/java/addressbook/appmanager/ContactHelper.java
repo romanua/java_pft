@@ -2,10 +2,12 @@ package addressbook.appmanager;
 
 import addressbook.model.ContactData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 /**
  * Created by roman on 06.03.2016.
@@ -16,15 +18,11 @@ public class ContactHelper extends HelperBase{
         super(wd);
     }
 
-    public void returnToHomePage() {
-        click(By.linkText("home page"));
-    }
-
     public void submitContactCreation() {
         click(By.name("submit"));
     }
 
-    public void fillContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
         select(wd.findElement(By.name("bday")), contactData.getBday());
         select(wd.findElement(By.name("bmonth")), contactData.getBmonth());
         select(wd.findElement(By.name("aday")), contactData.getAday());
@@ -48,6 +46,12 @@ public class ContactHelper extends HelperBase{
         type(By.name("address2"), contactData.getSecondAddress());
         type(By.name("phone2"), contactData.getPhone());
         type(By.name("notes"), contactData.getNotes());
+
+        if (creation) {
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
     }
 
     private void select(WebElement selectLocator, String selectValue) {
@@ -63,7 +67,7 @@ public class ContactHelper extends HelperBase{
     }
 
     public void initEditingFirstContact() {
-        click(By.xpath(".//*[@href='edit.php?id=1']"));
+        click(By.xpath(".//table//tr[2]//img[@title='Edit']"));
     }
 
     public void submitContactEditing() {
@@ -72,5 +76,22 @@ public class ContactHelper extends HelperBase{
 
     public void confirmContactDeletion() {
         wd.switchTo().alert().accept();
+    }
+
+    public boolean isContactPresent() {
+        return isElementPresent(By.xpath(".//tr[@name='entry'][1]//input"));
+    }
+
+    public void gotoContactPage() {
+        if (isElementPresent(By.xpath(".//input[@value='Enter'][1]"))) {
+            return;
+        }
+        click(By.linkText("add new"));
+    }
+
+    public void contactCreation(ContactData contact, boolean creation) {
+        gotoContactPage();
+        fillContactForm(contact,creation);
+        submitContactCreation();
     }
 }
