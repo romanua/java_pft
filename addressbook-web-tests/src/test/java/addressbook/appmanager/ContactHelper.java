@@ -2,12 +2,13 @@ package addressbook.appmanager;
 
 import addressbook.model.ContactData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by roman on 06.03.2016.
@@ -23,28 +24,22 @@ public class ContactHelper extends HelperBase{
     }
 
     public void fillContactForm(ContactData contactData, boolean creation) {
+        type(By.name("firstname"), contactData.getFirstName());
+        type(By.name("lastname"), contactData.getLastName());
         select(wd.findElement(By.name("bday")), contactData.getBday());
-        select(wd.findElement(By.name("bmonth")), contactData.getBmonth());
         select(wd.findElement(By.name("aday")), contactData.getAday());
         select(wd.findElement(By.name("amonth")), contactData.getAmonth());
-        type(By.name("firstname"), contactData.getName());
-        type(By.name("middlename"), contactData.getMiddleName());
-        type(By.name("lastname"), contactData.getLastName());
+        select(wd.findElement(By.name("bmonth")), contactData.getBmonth());
         type(By.name("nickname"), contactData.getNickname());
         type(By.name("title"), contactData.getCompanyTitle());
         type(By.name("company"), contactData.getCompanyName());
         type(By.name("address"), contactData.getAddress());
         type(By.name("home"), contactData.getHomePhone());
         type(By.name("mobile"), contactData.getMobilePhone());
-        type(By.name("work"), contactData.getWorkPhone());
-        type(By.name("fax"), contactData.getFax());
         type(By.name("email2"), contactData.getFirstEmail());
-        type(By.name("email3"), contactData.getSecondEmail());
-        type(By.name("homepage"), contactData.getWebsite());
         type(By.name("byear"), contactData.getBirthdayYear());
         type(By.name("ayear"), contactData.getAnniversaryYear());
         type(By.name("address2"), contactData.getSecondAddress());
-        type(By.name("phone2"), contactData.getPhone());
         type(By.name("notes"), contactData.getNotes());
 
         if (creation) {
@@ -90,8 +85,24 @@ public class ContactHelper extends HelperBase{
     }
 
     public void contactCreation(ContactData contact, boolean creation) {
-        gotoContactPage();
         fillContactForm(contact,creation);
         submitContactCreation();
+    }
+
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> elements = wd.findElements(By.cssSelector("tr[name='entry']"));
+        for (WebElement element : elements) {
+            String id = element.findElement(By.tagName("input")).getAttribute("id");
+            String firstNAme = element.getText();
+            String lastName = element.getText();
+            ContactData contact = new ContactData(id, firstNAme, lastName, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+            contacts.add(contact);
+        }
+       return contacts;
+    }
+
+    public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 }

@@ -1,68 +1,81 @@
 package addressbook.model;
 
 public class ContactData {
+    private final String id;
+    private final String firstName;
+    private final String lastName;
     private final String bDay;
     private final String bMonth;
     private final String aDay;
     private final String aMonth;
-    private final String name;
-    private final String middleName;
-    private final String lastName;
     private final String nickname;
     private final String companyTitle;
     private final String companyName;
     private final String address;
     private final String homePhone;
     private final String mobilePhone;
-    private final String workPhone;
-    private final String fax;
     private final String firstEmail;
-    private final String secondEmail;
-    private final String website;
     private final String birthdayYear;
     private final String anniversaryYear;
     private final String secondAddress;
-    private final String phone;
     private final String notes;
     private String group;
 
 
-    public ContactData(String bDay, String bMonth, String aDay, String aMonth, String name, String middleName, String lastName,
-                       String nickname, String companyTitle, String companyName, String address, String homePhone, String mobilePhone,
-                       String workPhone, String fax, String firstEmail, String secondEmail, String website, String birthdayYear,
-                       String anniversaryYear, String secondAddress, String phone, String notes, String group) {
-        this.aDay = aDay;
+    public ContactData(String id, String firstName, String lastName, String bDay, String aDay, String aMonth, String bMonth, String nickname,
+                       String companyTitle, String companyName, String address, String homePhone, String mobilePhone, String firstEmail,
+                       String birthdayYear, String anniversaryYear, String secondAddress, String notes, String group) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.bDay = bDay;
+        this.aDay = aDay ;
         this.aMonth = aMonth;
         this.bMonth = bMonth;
-        this.name = name;
-        this.middleName = middleName;
-        this.lastName = lastName;
         this.nickname = nickname;
         this.companyTitle = companyTitle;
         this.companyName = companyName;
         this.address = address;
         this.homePhone = homePhone;
         this.mobilePhone = mobilePhone;
-        this.workPhone = workPhone;
-        this.fax = fax;
         this.firstEmail = firstEmail;
-        this.secondEmail = secondEmail;
-        this.website = website;
         this.birthdayYear = birthdayYear;
         this.anniversaryYear = anniversaryYear;
         this.secondAddress = secondAddress;
-        this.phone = phone;
         this.notes = notes;
         this.group = group;
     }
 
-    public String getName() {
-        return name;
+    public ContactData(String firstName, String lastName, String bDay, String aDay, String aMonth, String bMonth, String nickname,
+                       String companyTitle, String companyName, String address, String homePhone, String mobilePhone, String firstEmail,
+                       String birthdayYear, String anniversaryYear, String secondAddress, String notes, String group) {
+        this.id = null;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.bDay = bDay;
+        this.aDay = aDay ;
+        this.aMonth = aMonth;
+        this.bMonth = bMonth;
+        this.nickname = nickname;
+        this.companyTitle = companyTitle;
+        this.companyName = companyName;
+        this.address = address;
+        this.homePhone = homePhone;
+        this.mobilePhone = mobilePhone;
+        this.firstEmail = firstEmail;
+        this.birthdayYear = birthdayYear;
+        this.anniversaryYear = anniversaryYear;
+        this.secondAddress = secondAddress;
+        this.notes = null;
+        this.group = null;
     }
 
-    public String getMiddleName() {
-        return middleName;
+    public String getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public String getLastName() {
@@ -93,24 +106,8 @@ public class ContactData {
         return mobilePhone;
     }
 
-    public String getWorkPhone() {
-        return workPhone;
-    }
-
-    public String getFax() {
-        return fax;
-    }
-
     public String getFirstEmail() {
         return firstEmail;
-    }
-
-    public String getSecondEmail() {
-        return secondEmail;
-    }
-
-    public String getWebsite() {
-        return website;
     }
 
     public String getAday() {
@@ -141,15 +138,43 @@ public class ContactData {
         return secondAddress;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
     public String getNotes() {
         return notes;
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 
     public String getGroup() {
         return group;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ContactData that = (ContactData) o;
+
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+        return lastName != null ? lastName.equals(that.lastName) : that.lastName == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        return result;
+    }
+
 }
