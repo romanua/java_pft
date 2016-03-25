@@ -1,7 +1,7 @@
 package addressbook.model;
 
 public class ContactData {
-    private final String id;
+    private int id;
     private final String firstName;
     private final String lastName;
     private final String bDay;
@@ -21,11 +21,10 @@ public class ContactData {
     private final String notes;
     private String group;
 
-
-    public ContactData(String id, String firstName, String lastName, String bDay, String aDay, String aMonth, String bMonth, String nickname,
+    public ContactData(String firstName, String lastName, String bDay, String aDay, String aMonth, String bMonth, String nickname,
                        String companyTitle, String companyName, String address, String homePhone, String mobilePhone, String firstEmail,
                        String birthdayYear, String anniversaryYear, String secondAddress, String notes, String group) {
-        this.id = id;
+        this.id = Integer.MAX_VALUE;
         this.firstName = firstName;
         this.lastName = lastName;
         this.bDay = bDay;
@@ -46,10 +45,10 @@ public class ContactData {
         this.group = group;
     }
 
-    public ContactData(String firstName, String lastName, String bDay, String aDay, String aMonth, String bMonth, String nickname,
+    public ContactData(int id,String firstName, String lastName, String bDay, String aDay, String aMonth, String bMonth, String nickname,
                        String companyTitle, String companyName, String address, String homePhone, String mobilePhone, String firstEmail,
                        String birthdayYear, String anniversaryYear, String secondAddress, String notes, String group) {
-        this.id = null;
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.bDay = bDay;
@@ -70,8 +69,16 @@ public class ContactData {
         this.group = null;
     }
 
-    public String getId() {
+    public String getGroup() {
+        return group;
+    }
+
+    public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -151,11 +158,6 @@ public class ContactData {
                 '}';
     }
 
-    public String getGroup() {
-        return group;
-    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -163,7 +165,6 @@ public class ContactData {
 
         ContactData that = (ContactData) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
         return lastName != null ? lastName.equals(that.lastName) : that.lastName == null;
 
@@ -171,10 +172,10 @@ public class ContactData {
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        int result = firstName != null ? firstName.hashCode() : 0;
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         return result;
     }
+
 
 }
