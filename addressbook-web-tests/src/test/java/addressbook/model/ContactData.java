@@ -5,6 +5,9 @@ public class ContactData {
     private String firstName;
     private String lastName;
     private String group;
+    private String firstEmail;
+    private String secondEmail;
+    private String thirdEmail;
 //    private String bDay;
 //    private String bMonth;
 //    private String aDay;
@@ -15,7 +18,6 @@ public class ContactData {
 //    private String address;
 //    private String homePhone;
 //    private String mobilePhone;
-//    private String firstEmail;
 //    private String birthdayYear;
 //    private String anniversaryYear;
 //    private String secondAddress;
@@ -28,11 +30,106 @@ public class ContactData {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", group='" + group + '\'' +
+                ", firstEmail='" + firstEmail + '\'' +
+                ", secondEmail='" + secondEmail + '\'' +
+                ", thirdEmail='" + thirdEmail + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ContactData that = (ContactData) o;
+
+        if (id != that.id) return false;
+        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+        if (group != null ? !group.equals(that.group) : that.group != null) return false;
+        if (firstEmail != null ? !firstEmail.equals(that.firstEmail) : that.firstEmail != null) return false;
+        if (secondEmail != null ? !secondEmail.equals(that.secondEmail) : that.secondEmail != null) return false;
+        return thirdEmail != null ? thirdEmail.equals(that.thirdEmail) : that.thirdEmail == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (group != null ? group.hashCode() : 0);
+        result = 31 * result + (firstEmail != null ? firstEmail.hashCode() : 0);
+        result = 31 * result + (secondEmail != null ? secondEmail.hashCode() : 0);
+        result = 31 * result + (thirdEmail != null ? thirdEmail.hashCode() : 0);
+        return result;
+    }
+
     public ContactData withLastName(String lastName) {
         this.lastName = lastName;
         return this;
+
     }
 
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
+    }
+
+    public ContactData withId(int id) {
+        this.id = id;
+        return this;
+    }
+
+    public ContactData withFirstEmail(String firstEmail) {
+        this.firstEmail = firstEmail;
+        return this;
+    }
+
+    public ContactData withSecondEmail(String secondEmail) {
+        this.secondEmail = secondEmail;
+        return this;
+    }
+
+    public ContactData withThirdEmail(String thirdEmail) {
+        this.thirdEmail = thirdEmail;
+        return this;
+    }
+
+
+    public String getGroup() {
+        return group;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstEmail() {
+        return firstEmail;
+    }
+
+    public String getSecondEmail() {
+        return secondEmail;
+    }
+
+    public String getThirdEmail() {
+        return thirdEmail;
+    }
 //    public ContactData withtbDay(String bDay) {
 //        this.bDay = bDay;
 //        return this;
@@ -83,10 +180,6 @@ public class ContactData {
 //        return this;
 //    }
 //
-//    public ContactData withFirstEmail(String firstEmail) {
-//        this.firstEmail = firstEmail;
-//        return this;
-//    }
 //
 //    public ContactData withBirthdayYear(String birthdayYear) {
 //        this.birthdayYear = birthdayYear;
@@ -107,33 +200,7 @@ public class ContactData {
 //        this.notes = notes;
 //        return this;
 //    }
-
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
-
-    public ContactData withId(int id) {
-        this.id = id;
-        return this;
-    }
-
-    public String getGroup() {
-        return group;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
+//
 //    public String getNickname() {
 //        return nickname;
 //    }
@@ -156,10 +223,6 @@ public class ContactData {
 //
 //    public String getMobilePhone() {
 //        return mobilePhone;
-//    }
-//
-//    public String getFirstEmail() {
-//        return firstEmail;
 //    }
 //
 //    public String getAday() {
@@ -193,37 +256,6 @@ public class ContactData {
 //    public String getNotes() {
 //        return notes;
 //    }
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        ContactData that = (ContactData) o;
-
-        if (id != that.id) return false;
-        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
-        return lastName != null ? lastName.equals(that.lastName) : that.lastName == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
-        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id='" + id + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
-    }
 
 
 }
