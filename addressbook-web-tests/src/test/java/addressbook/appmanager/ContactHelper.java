@@ -152,10 +152,10 @@ public class ContactHelper extends HelperBase{
         String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
+        String address = wd.findElement(By.name("address")).getAttribute("value");
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFirstName(firstname).withLastName(lastname)
-                .withEmail(email).withHomePhone(home)
-                .withMobilePhone(mobile).withWorkPhone(work);
+                .withEmail(email).withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withAddress(address);
     }
 
     private void initContactModificationByID(int id) {
