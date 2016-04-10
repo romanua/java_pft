@@ -26,12 +26,13 @@ public class ContactHelper extends HelperBase{
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstName());
         type(By.name("lastname"), contactData.getLastName());
-        type(By.name("email"), contactData.getFirstEmail());
-        type(By.name("email2"), contactData.getSecondEmail());
-        type(By.name("email3"), contactData.getThirdEmail());
-        type(By.name("home"), contactData.getFirstEmail());
         type(By.name("mobile"), contactData.getSecondEmail());
-        type(By.name("work"), contactData.getThirdEmail());
+        attach(By.name("photo"), contactData.getPhoto());
+//        type(By.name("email"), contactData.getFirstEmail());
+//        type(By.name("email2"), contactData.getSecondEmail());
+//        type(By.name("email3"), contactData.getThirdEmail());
+//        type(By.name("home"), contactData.getFirstEmail());
+//        type(By.name("work"), contactData.getThirdEmail());
 //        select(wd.findElement(By.name("bday")), contactData.getBday());
 //        select(wd.findElement(By.name("aday")), contactData.getAday());
 //        select(wd.findElement(By.name("amonth")), contactData.getAmonth());
@@ -46,12 +47,12 @@ public class ContactHelper extends HelperBase{
 //        type(By.name("ayear"), contactData.getAnniversaryYear());
 //        type(By.name("address2"), contactData.getSecondAddress());
 //        type(By.name("notes"), contactData.getNotes());
-
-        if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-        } else {
-            Assert.assertFalse(isElementPresent(By.name("new_group")));
-        }
+//
+//        if (creation) {
+//            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+//        } else {
+//            Assert.assertFalse(isElementPresent(By.name("new_group")));
+//        }
     }
 
     private void select(WebElement selectLocator, String selectValue) {
@@ -91,7 +92,7 @@ public class ContactHelper extends HelperBase{
     public void create(ContactData contact, boolean creation) {
         fillContactForm(contact,creation);
         submitContactCreation();
-        contactsCache = null;
+//        contactsCache = null;
         returnToHomePage();
     }
 
@@ -99,14 +100,14 @@ public class ContactHelper extends HelperBase{
         initContactModificationByID(contact.getId());
         fillContactForm(contact, false);
         submitContactEditing();
-        contactsCache = null;
+//        contactsCache = null;
         returnToHomePage();
     }
 
     public void delete(ContactData contact) {
         selectContactById(contact.getId());
         deleteSelectedContact();
-        contactsCache = null;
+//        contactsCache = null;
     }
 
     public void selectContact(int index) {
@@ -121,27 +122,28 @@ public class ContactHelper extends HelperBase{
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    private Contacts contactsCache = null;
+//    private Contacts contactsCache = null;
 
     public Contacts all() {
-        if (contactsCache != null) {
-            return new Contacts(contactsCache);
-        }
+//        if (contactsCache != null) {
+//            return new Contacts(contactsCache);
+//        }
 
-        contactsCache = new Contacts();
+        Contacts contacts = new Contacts();
         List<WebElement> rows = wd.findElements((By.name("entry")));
         for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(By.tagName("td"));
-            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("id"));
             String lastname = cells.get(1).getText();
             String firstname = cells.get(2).getText();
-            String[] phones = cells.get(5).getText().split("\n");
+            String allphones = cells.get(5).getText();
             String[] emails = cells.get(4).getText().split("\n");
 
-            contactsCache.add(new ContactData().withId(id).withFirstName(firstname).withLastName(lastname).withFirstEmail(emails[0])
-                    .withSecondEmail(emails[1]).withThirdEmail(emails[2]).withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]));
+            contacts.add(new ContactData()
+                    .withId(id).withFirstName(firstname).withLastName(lastname).withFirstEmail(emails[0])
+                    .withSecondEmail(emails[1]).withThirdEmail(emails[2]).withAllPhones(allphones));
         }
-        return new Contacts(contactsCache);
+        return contacts;
     }
 
     public ContactData infoFromEditForm(ContactData contact) {
