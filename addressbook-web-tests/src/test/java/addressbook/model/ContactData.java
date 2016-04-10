@@ -7,14 +7,13 @@ public class ContactData {
     private String firstName;
     private String lastName;
     private String group;
-    private String firstEmail;
-    private String secondEmail;
-    private String thirdEmail;
     private String homePhone;
     private String mobilePhone;
     private String workPhone;
     private String allPhones;
-    private String allEmails;
+    private String email;
+    private String address;
+    private File photo;
 
     public File getPhoto() {
         return photo;
@@ -25,14 +24,21 @@ public class ContactData {
         return this;
     }
 
-    private File photo;
-
-    public String getAllEmails() {
-        return allEmails;
+    public String getAddress() {
+        return address;
     }
 
-    public ContactData withAllEmails(String allEmails) {
-        this.allEmails = allEmails;
+    public ContactData withAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public ContactData withEmail(String email) {
+        this.email = email;
         return this;
     }
 
@@ -67,21 +73,6 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withFirstEmail(String firstEmail) {
-        this.firstEmail = firstEmail;
-        return this;
-    }
-
-    public ContactData withSecondEmail(String secondEmail) {
-        this.secondEmail = secondEmail;
-        return this;
-    }
-
-    public ContactData withThirdEmail(String thirdEmail) {
-        this.thirdEmail = thirdEmail;
-        return this;
-    }
-
     public ContactData withHomePhone(String firstPhone) {
         this.homePhone = firstPhone;
         return this;
@@ -96,7 +87,6 @@ public class ContactData {
         this.workPhone = thirdPhone;
         return this;
     }
-
 
     public String getGroup() {
         return group;
@@ -115,18 +105,6 @@ public class ContactData {
         return lastName;
     }
 
-    public String getFirstEmail() {
-        return firstEmail;
-    }
-
-    public String getSecondEmail() {
-        return secondEmail;
-    }
-
-    public String getThirdEmail() {
-        return thirdEmail;
-    }
-
     public String getHomePhone() {
         return homePhone;
     }
@@ -140,6 +118,21 @@ public class ContactData {
     }
 
     @Override
+    public String toString() {
+        return "ContactData{" +
+                "address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                ", allPhones='" + allPhones + '\'' +
+                ", workPhone='" + workPhone + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", homePhone='" + homePhone + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", id=" + id +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -149,28 +142,13 @@ public class ContactData {
         if (id != that.id) return false;
         if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
         if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
-        if (firstEmail != null ? !firstEmail.equals(that.firstEmail) : that.firstEmail != null) return false;
-        if (secondEmail != null ? !secondEmail.equals(that.secondEmail) : that.secondEmail != null) return false;
-        if (thirdEmail != null ? !thirdEmail.equals(that.thirdEmail) : that.thirdEmail != null) return false;
         if (homePhone != null ? !homePhone.equals(that.homePhone) : that.homePhone != null) return false;
         if (mobilePhone != null ? !mobilePhone.equals(that.mobilePhone) : that.mobilePhone != null) return false;
-        return workPhone != null ? workPhone.equals(that.workPhone) : that.workPhone == null;
+        if (workPhone != null ? !workPhone.equals(that.workPhone) : that.workPhone != null) return false;
+        if (allPhones != null ? !allPhones.equals(that.allPhones) : that.allPhones != null) return false;
+        if (email != null ? !email.equals(that.email) : that.email != null) return false;
+        return address != null ? address.equals(that.address) : that.address == null;
 
-    }
-
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", firstEmail='" + firstEmail + '\'' +
-                ", secondEmail='" + secondEmail + '\'' +
-                ", thirdEmail='" + thirdEmail + '\'' +
-                ", homePhone='" + homePhone + '\'' +
-                ", mobilePhone='" + mobilePhone + '\'' +
-                ", workPhone='" + workPhone + '\'' +
-                '}';
     }
 
     @Override
@@ -178,12 +156,12 @@ public class ContactData {
         int result = id;
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (firstEmail != null ? firstEmail.hashCode() : 0);
-        result = 31 * result + (secondEmail != null ? secondEmail.hashCode() : 0);
-        result = 31 * result + (thirdEmail != null ? thirdEmail.hashCode() : 0);
         result = 31 * result + (homePhone != null ? homePhone.hashCode() : 0);
         result = 31 * result + (mobilePhone != null ? mobilePhone.hashCode() : 0);
         result = 31 * result + (workPhone != null ? workPhone.hashCode() : 0);
+        result = 31 * result + (allPhones != null ? allPhones.hashCode() : 0);
+        result = 31 * result + (email != null ? email.hashCode() : 0);
+        result = 31 * result + (address != null ? address.hashCode() : 0);
         return result;
     }
 

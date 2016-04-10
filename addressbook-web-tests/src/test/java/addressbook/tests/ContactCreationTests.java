@@ -16,7 +16,9 @@ public class ContactCreationTests extends TestBase {
     public void testContactCreation() {
         Contacts before = app.contact().all();
         app.contact().gotoContactPage();
-        ContactData contact = new ContactData().withFirstName("Ivan").withLastName("Ivanov").withMobilePhone("222");
+        File photo = new File("addressbook-web-tests/src/test/resources/stru.png");
+        ContactData contact = new ContactData().withFirstName("Ivan").withLastName("Ivanov").withEmail("email@gmail.com")
+                .withAddress("address").withHomePhone("111").withMobilePhone("222").withWorkPhone("333");
         app.contact().create(contact, true);
         Contacts after = app.contact().all();
         assertThat(after.size(), equalTo(before.size() + 1));
@@ -29,8 +31,8 @@ public class ContactCreationTests extends TestBase {
     public void testBadContactCreation() {
         Contacts before = app.contact().all();
         app.contact().gotoContactPage();
-        File photo = new File("addressbook-web-tests/src/test/resources/stru.png");
-        ContactData contact = new ContactData().withFirstName("Ivan").withLastName("Ivanov").withMobilePhone("222").withPhoto(photo);
+        ContactData contact = new ContactData().withFirstName("Ivan'").withLastName("Ivanov").withMobilePhone("222")
+                .withEmail("email@gmail.com").withAddress("address");
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.contact().all();

@@ -3,7 +3,6 @@ package addressbook.tests;
 import addressbook.model.ContactData;
 import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -13,7 +12,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 /**
  * Created by roman on 05.04.2016.
  */
-public class ContactPhoneTests extends TestBase {
+public class ContactDetailsTests extends TestBase {
 
     @Test
     public void testContactPhones() {
@@ -21,13 +20,15 @@ public class ContactPhoneTests extends TestBase {
         ContactData contact = app.contact().all().iterator().next();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 
+        assertThat(contact.getAddress(), equalTo(contactInfoFromEditForm.getAddress()));
+        assertThat(contact.getEmail(), equalTo(contactInfoFromEditForm.getEmail()));
         assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditForm)));
     }
 
-    private String  mergePhones(ContactData contact) {
+    private String mergePhones(ContactData contact) {
         return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone())
                 .stream().filter((s) -> ! s.equals(""))
-                .map(ContactPhoneTests::cleaned)
+                .map(ContactDetailsTests::cleaned)
                 .collect(Collectors.joining("\n"));
     }
 
