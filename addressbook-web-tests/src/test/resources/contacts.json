@@ -1,0 +1,29 @@
+[
+  {
+    "firstName": "Ivan 0",
+    "lastName": "Ivanov 0",
+    "homePhone": "111 0",
+    "mobilePhone": "222 0",
+    "workPhone": "333 0",
+    "email": "email 0@gmail.com",
+    "address": "address 0"
+  },
+  {
+    "firstName": "Ivan 1",
+    "lastName": "Ivanov 1",
+    "homePhone": "111 1",
+    "mobilePhone": "222 1",
+    "workPhone": "333 1",
+    "email": "email 1@gmail.com",
+    "address": "address 1"
+  },
+  {
+    "firstName": "Ivan 2",
+    "lastName": "Ivanov 2",
+    "homePhone": "111 2",
+    "mobilePhone": "222 2",
+    "workPhone": "333 2",
+    "email": "email 2@gmail.com",
+    "address": "address 2"
+  }
+]
