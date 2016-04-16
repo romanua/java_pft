@@ -1,0 +1,8 @@
+6447 [main] INFO  addressbook.tests.TestBase - Start test testBadGroupCreation with parameters []
+9058 [main] INFO  addressbook.tests.TestBase - Stop test testBadGroupCreation
+9097 [main] INFO  addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
+11204 [main] INFO  addressbook.tests.TestBase - Stop test testGroupCreation
+11205 [main] INFO  addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
+13743 [main] INFO  addressbook.tests.TestBase - Stop test testGroupCreation
+13744 [main] INFO  addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
+15964 [main] INFO  addressbook.tests.TestBase - Stop test testGroupCreation
