@@ -5,10 +5,13 @@ import addressbook.model.Groups;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.*;
+import java.security.acl.Group;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -19,6 +22,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 
 public class  GroupCreationTests extends TestBase {
+
+
 
     @DataProvider
     public Iterator<Object[]> validGroupsFromXml() throws IOException {

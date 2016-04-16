@@ -6,7 +6,6 @@
             <class name="addressbook.tests.GroupCreationTests" />
             <class name="addressbook.tests.GroupModificationTests" />
             <class name="addressbook.tests.GroupDeletionTests" />
-
         </classes>
     </test>
 </suite>
