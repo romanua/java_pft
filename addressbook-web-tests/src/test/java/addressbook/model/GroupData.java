@@ -12,7 +12,7 @@ import javax.persistence.Id;
 
 @XStreamAlias("group")
 @Entity
-@javax.persistence.Table(name = "group_list")
+@Table(name = "group_list")
 public class GroupData {
     @XStreamOmitField
     @Id
