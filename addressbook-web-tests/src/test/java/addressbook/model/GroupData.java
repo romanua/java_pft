@@ -3,16 +3,14 @@ package addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
-import org.hibernate.annotations.Table;
 import org.hibernate.annotations.Type;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @XStreamAlias("group")
 @Entity
-@Table(name = "group_list")
+@javax.persistence.Table(name = "group_list")
 public class GroupData {
     @XStreamOmitField
     @Id
