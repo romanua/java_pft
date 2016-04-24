@@ -1,7 +1,7 @@
+
 package addressbook.tests;
 
 import addressbook.model.ContactData;
-import addressbook.model.GroupData;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -48,3 +48,4 @@ public class HbConnectionTest {
         session.close();
     }
 }
+
