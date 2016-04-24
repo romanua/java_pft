@@ -1,7 +1,7 @@
 package mantis.tests;
 
 
-import appmanager.ApplicationManager;
+import mantis.appmanager.ApplicationManager;
 import org.openqa.selenium.remote.BrowserType;
 
 import org.testng.annotations.AfterSuite;
