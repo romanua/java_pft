@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082dd9f3-5df8-462b-8768-de573d6e6deb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mantis-tests/build.gradle" afterPath="$PROJECT_DIR$/mantis-tests/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
     </list>
     <ignored path="java.iws" />
@@ -70,70 +66,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1152#1153#0" expanded="false" />
-                <element signature="e#1196#1197#0" expanded="false" />
-                <element signature="e#1241#1242#0" expanded="false" />
-                <element signature="e#1291#1292#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegistrationTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="204">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/build.gradle">
+      <file leaf-file-name="LoginTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/LoginTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            <state relative-caret-position="119">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FtpHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/FtpHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config_inc.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/HttpSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -509,6 +457,11 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'sandbox'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Runs this project as a JVM application" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
                 <option name="name" value="run" />
@@ -655,9 +608,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="1461710913000" />
-        <entry key="$PROJECT_DIR$/mantis-tests" value="1461712107000" />
-        <entry key="$PROJECT_DIR$/sandbox" value="1461710913000" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="1461750219280" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="1461750221498" />
+        <entry key="$PROJECT_DIR$/sandbox" value="1461750221577" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -679,6 +632,66 @@
               <option name="name" value="addressbook-web-tests" />
               <option name="projectBuildClasspath">
                 <list>
+                  <option value="C:/Tools/gradle-2.11/lib/ant-1.9.3.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/ant-launcher-1.9.3.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-base-services-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-base-services-groovy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-cli-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-core-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-docs-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-launcher-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-messaging-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-model-core-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-model-groovy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-open-api-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-resources-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-tooling-api-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-ui-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-wrapper-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/groovy-all-2.4.4.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-announce-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-antlr-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-build-comparison-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-build-init-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-code-quality-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-dependency-management-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-diagnostics-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ear-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ide-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ide-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ivy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-jacoco-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-javascript-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-jetty-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-groovy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-java-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-jvm-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-scala-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-maven-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-osgi-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-base-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-jvm-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-play-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-plugin-development-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-plugin-use-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-plugins-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-publish-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-reporting-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-resources-http-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-resources-s3-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-resources-sftp-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-scala-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-signing-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-sonar-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-test-kit-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-testing-base-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-testing-jvm-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-testing-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-tooling-api-builders-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/addressbook-web-tests/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/addressbook-web-tests/buildSrc/src/main/groovy" />
                 </list>
@@ -787,6 +800,66 @@
               <option name="name" value="sandbox" />
               <option name="projectBuildClasspath">
                 <list>
+                  <option value="C:/Tools/gradle-2.11/lib/ant-1.9.3.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/ant-launcher-1.9.3.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-base-services-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-base-services-groovy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-cli-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-core-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-docs-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-launcher-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-messaging-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-model-core-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-model-groovy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-open-api-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-resources-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-tooling-api-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-ui-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/gradle-wrapper-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/groovy-all-2.4.4.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-announce-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-antlr-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-build-comparison-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-build-init-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-code-quality-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-dependency-management-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-diagnostics-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ear-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ide-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ide-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-ivy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-jacoco-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-javascript-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-jetty-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-groovy-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-java-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-jvm-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-language-scala-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-maven-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-osgi-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-base-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-jvm-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-platform-play-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-plugin-development-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-plugin-use-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-plugins-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-publish-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-reporting-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-resources-http-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-resources-s3-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-resources-sftp-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-scala-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-signing-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-sonar-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-test-kit-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-testing-base-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-testing-jvm-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-testing-native-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/gradle-tooling-api-builders-2.11.jar" />
+                  <option value="C:/Tools/gradle-2.11/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/sandbox/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/sandbox/buildSrc/src/main/groovy" />
                 </list>
@@ -848,12 +921,12 @@
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/LoginTests.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/HttpSession.java" />
-        <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/RegistrationHelper.java" />
         <option value="$PROJECT_DIR$/mantis-tests/build.gradle" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/FtpHelper.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php" />
+        <option value="$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
       </list>
     </option>
   </component>
@@ -871,9 +944,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="980" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -919,8 +993,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -930,32 +1002,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mantis-tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mantis-tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1479,6 +1529,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1658,16 +1715,12 @@
       <workItem from="1461624987939" duration="3417000" />
       <workItem from="1461710917399" duration="1661000" />
       <workItem from="1461712697439" duration="233000" />
+      <workItem from="1461750230506" duration="273000" />
+      <workItem from="1461750535617" duration="1038000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTests - 2016.04.26 at 02h 23m 26s.xml">
-      <configuration name="LoginTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTests - 2016.04.26 at 02h 24m 11s.xml">
-      <configuration name="LoginTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="LoginTests - 2016.04.26 at 02h 52m 42s.xml">
       <configuration name="LoginTests" configurationId="TestNG" />
     </history-entry>
@@ -1692,9 +1745,15 @@
     <history-entry file="RegistrationTests - 2016.04.27 at 01h 56m 59s.xml">
       <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="RegistrationTests - 2016.04.27 at 12h 50m 37s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTests - 2016.04.27 at 13h 18m 26s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114406000" />
+    <option name="totallyTimeSpent" value="115717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1706,38 +1765,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="980" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26190478" sideWeight="0.49573562" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502708" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30952382" sideWeight="0.4936034" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40086675" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30877572" sideWeight="0.4936034" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19808307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15351813" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34797296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34797296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26218852" sideWeight="0.49573562" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4009009" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2011,73 +2070,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/LoginTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/RegistrationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-tests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="221">
           <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1196#1197#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-            <element signature="e#1291#1292#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/FtpHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/HttpSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="374">
           <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/FtpHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/RegistrationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/LoginTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/mantis/tests/RegistrationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

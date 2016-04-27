@@ -7,7 +7,7 @@ import static mantis.tests.TestBase.app;
 /**
  * Created by roman on 26.04.2016.
  */
-public class RegistrationTests {
+public class RegistrationTests extends TestBase{
 
     @Test
     public void testRegistration() {
